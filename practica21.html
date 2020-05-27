@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<head>
+	<title>fomulario</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+    <style>
+      body{
+  background: #D20BEA
+}
+
+form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+.button {
+  /* Alinear los botones con los campos de texto */
+  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+}
+
+.uno li{
+  list-style: none;
+  
+
+}
+.boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+
+
+        </style>
+</head>
+<body>
+	<form>
+	<form action="/my-handling-form-page" method="post">
+ <ul>
+  <li>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="user_name">
+  </li>
+  <li>
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="user_mail" placeholder="@">
+  </li>
+
+  <li>
+    <label for="mail">Poblacion:</label>
+    <input type="email" id="mail" name="user_mail" >
+  </li>
+ </ul>
+
+
+      </td><td>
+            <form  >
+                <p>Sexo:<br>
+                    <input type="radio" name="hm" value="h" required>Hombres<br>
+                        <input type="radio" name="hm" value="m" required>Mujer<br></p>
+                    
+                
+        
+    </td>
+
+    Frecuencia de los viajes<br>
+  <select name="menu">
+  <option selected>Varias veces al dia </option>
+    <option value="1">dia uno</option>
+    <option value="2">dia dos </option>
+    <option value="3">dia </option>
+</select>
+
+
+
+<p class="uno">
+	
+		<ul>
+<li>
+    Comnetarios sobre su satifaccion personal<br>
+   <textarea name="texto" rows="4" cols="40"></textarea>
+  </li>
+</ul>
+
+</p>
+
+<input type="checkbox" name="casilla">Deseo recibir norificaciones de las novedades en las lineas de autobuses.
+<br>
+<br>
+
+
+<p><input type="reset" value="Borrar todo"></p><br>
+ <p><input type="submit" value="Enviar formulario"></p><br>
+
+</form>
+<br>
+ <br>
+
+
+  <a class="boton_personalizado" href="index.html" class="btn btn-common">inicio</a>
+
+</body>
+</html>
+
+

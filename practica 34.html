@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 34</title>
+    <style>
+        label{
+            display: block;
+            float: left;
+            width: 70px;
+        }
+         .boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    </style>
+</head>
+
+<body>
+<form action="">
+    <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+    </div>
+
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password">
+    </div>
+    <input type="submit" onclick='return enviarFormulario()' value='Enviar'>
+
+</form>
+     <div id="error"> </div>
+
+
+    <script src='practica34.js'></script>
+     <br>
+ <br>
+
+
+  <a class="boton_personalizado" href="index.html" class="btn btn-common">inicio</a>
+</body>
+</html>

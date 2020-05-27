@@ -1,0 +1,33 @@
+body{
+    background-color: rosybrown;
+}
+.banner{
+    width: 700px;
+    height: 300px;
+    border: 3px solid black;
+    margin: auto;
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+    animation-direction: alternate;
+    }
+    @keyframes banner {
+        0%, 30% {
+            background-image: url(img/peep.png);
+            opacity: 1;
+        }
+        31%, 34%{
+            opacity: 0.1;
+        }
+        35%, 65%{
+            background-image: url(img/nom.jpg);
+            opacity: 1;
+        }
+        66%, 69%{
+            opacity: 0.1;
+        }
+        70%, 100%{
+            opacity: 1;
+            background-image: url(img/irma.jpg);
+        }
+    }
+    

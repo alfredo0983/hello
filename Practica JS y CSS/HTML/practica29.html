@@ -1,0 +1,33 @@
+<Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset-utf=8"/>
+<title>Practica css y js</title>
+<script type ="text/javascript" src="C:\Users\Irma Dolores\Desktop\Practica JS y CSS\JS\FuncionesJavaScript.js"></script>
+<link href= "C:\Users\Irma Dolores\Desktop\Practica JS y CSS\CSS\estilos.css" rel="stylesheet"/>
+</head>
+<body>
+    <img width="500" height="100" src="http://0201.nccdn.net/4_2/000/000/046/6ea/icon-cetis-2019.png#RDAMDAID21611516"/>
+    <div>
+        <label class="titulo">
+            Impresion de Divs mediante JS
+        </label>
+    </div>
+    <div>
+        <span class="subTitulo">Area de impresion</span>
+        </div>
+        <div id="ImpresionDiv">
+            <p class="textoNormal">Este es un ejemplo de impresion de un elemento Div, todo el contenido de esta seccion se imprimira 
+                en un nuevo documento dependiendo de la impresora que seleccione.Esta impresion puede incluir 
+                imagenes pues esta basada en el contenido de un tag html.</p>
+                <div>
+                    <img width="200" height="200" src="C:\Users\Irma Dolores\Desktop\impresora.jpg"/>
+                </div>
+            </p>
+        </div>
+        <div>
+            <button onclick="printDiv('ImpresionDiv')" class="botones" id="ImprimeDiv">Imprimir</button>
+            <button onclick="miMensaje('Mensaje de prueba, funcion JS miMensaje')" class="botones" id="Mensaje">Mensajes</button>
+        </div>
+</body>
+</html>

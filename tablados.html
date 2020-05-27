@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<head>
+	<title>practica 20</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/mari.jpg">
+    <link href="estilos.css" rel="stylesheet">
+        <style>
+            body{
+    font-family: Arial, helvetica, seans-serif;
+    background-image: url(img/mari.jpg);
+}
+
+table{
+    font-family: "lucida sans unicode", "lucida grande", sans seans-serif;
+    font-size: 12px; margin: 45px; width: 480px; text-align: left; border-collapse: collapse;
+
+}
+ 
+
+th{
+    font-size: 13px; font-weight: normal; padding: 8px; background: #b9c9fe;
+    border-top: 4px solid #aabcfe; border-bottom: 1px solid #000; color: #000333;
+}
+
+td{
+    padding: 8px; background: #e8edff; border-bottom: 1px solid #fff;
+    color: #669; border-top: 1px solid transparent;
+}
+
+tr:hover td {
+    background:#000000; color: #339;
+}
+
+caption{
+
+    font-size: 30px;
+    color:white;
+}
+
+p{
+    text-align: center;
+}
+.boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+
+
+                </style>
+</head>
+<body>
+    <table >
+        <caption>Tabla de formularios .</caption>
+             <tr> <th>Formulario 1</th> <th>Formulario 2</th>  <th>Formulario 3</th>
+                <th>Formulario 4</th> <th>Formulario 5</th></tr>
+               <tr><td>
+ <!--el formulario: <form> html livig standard recomendacion html 5.2 mozilla developer network
+                Un formulario es un conjunto de controles(botones, cajas de texto, casi botones radio, etc)que permiten al usuario introducir datos y enviar los al servidor web para su procesamiento--->
+    <form>
+        <input type="checkbox" name="sistema" value="windos xp" required >windos xp<br>
+        <input type="checkbox" name="sistema" value="windos xp" required >windos xp<br>
+        <input type="checkbox" name="sistema" value="windos vista" required >windos vista<br>
+        <input type="checkbox" name="sistema" value="windos 7" required >windos 7<br>
+        <input type="checkbox" name="sistema" value="windos 10" required >windos 10<br>
+        <input type="checkbox" name="sistema" value="Linux" required >Linux<br>
+       <p><imput type="Reset" value="Borrar todo"> </p>
+        <p><input type="submit" value="Enviar formulario"><br></p>
+        </form>
+        <!---el atributo value permite establecer el valor inicial de un control, aunque cada control lo utiliza de una forma 
+                    ligeramente distinta y algunos controles no lo admiten(area de texto, archivo o imagen).
+                    el atributo requierd permite indicar que controles es obligatorio rellenar para enviar el fomulario-->
+        </td><td>
+            <form  >
+                <p>Sexo:<br>
+                    <input type="radio" name="hm" value="h" required>Hombres<br>
+                        <input type="radio" name="hm" value="m" required>Mujer<br></p>
+                    <p>Edad:<br>
+                        <input type="radio" name="edad" value="menor"size="40">Menor<br>
+                        <input type="radio" name="edad" value="Adulto" required>Mayor<br>
+                        <p>Casa propia:<br>
+                            <input type="radio" name="Casa" value="si">Menor<br>
+                                <input type="radio" name="Casa" value="no" required>Adulto<br>
+                                <p><input type="reset" value="Borrar todo"></p><br>
+                                <p><input type="submit" value="Enviar formulario"></p><br>
+        </form>
+    </td>
+    <td>
+    	<form>
+            <p>Nombres
+    		<input type="text" name="nombres" size="40" placeholder="Escribe tu(s) nombres"></p>
+            <p> Apellidos
+						<input type="text" name="apellidos" size="40" placeholder="Escribe sus dos apellidos"></p>
+                    <p>Direcion
+						<input type="text" name="apellidos" size="40" placeholder="Escribe tu direccion solo si eres de milpa alta">
+                    </p>
+						<p><input type="text" name="texto" value="¡Soy el 4PB)!" readonly>
+						<input type="text" name="texto" placeholder="¡Soy del 4PA" readonly></p>
+
+						<p> <input type="reset" value="Borrar todo"></p>
+						<p><input type="submit" value="enviar formulario"><br></p>
+					</form>
+				</td><td>
+             <form>
+						<p>
+						<input type="text" name="texto1" placeholder="texto1"></p>
+						<p>
+						<input type="text" name="texto2" placeholder="texto2"></p>
+						<p>
+						<input type="text" name="texto3" placeholder="texto3"></p>
+						<p>
+						<input type="text" name="texto1" placeholder="texto4"></p>
+
+						<input type="text" name="texto1" placeholder="aceso con a">
+						<input type="text" name="texto2" placeholder="aceso con i">
+						<input type="text" name="texto3" placeholder="aceso con o">
+						<input type="text" name="texto4" placeholder="aceso con u">
+					</form>
+				</td><td>
+                    <form>
+                        <p align="center"> contraseña:<input type="text" name="contraseña" maxlength=6></p>
+                        <p align="center"> Usuario:<input type="text" name="usuario" maxlength=6></p>
+
+                        <p><input type="Reset" value="Borrar todo"></p>
+
+                        <p><input type="submit" value="enviar formulario"></p></td>
+
+
+                    </form>
+        </table>
+        <br>
+         <br>
+ <br>
+
+
+  <a class="boton_personalizado" href="index.html" class="btn btn-common">inicio</a>
+
+
+</body>
+</html>

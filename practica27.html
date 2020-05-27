@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+  <head>
+  <title>Figuras con canvas </title>
+  <link rel ="shortcut icon" href="img\cetis.png" type="image/x-icon">
+    <link href ="estilos20.css" rel="stylesheet"/>
+  <script type="text/javascript">
+  function dibujarCanvas(){
+  var canvas = document.getElementById('miCanvas');
+  var contexto = canvas.getContext('2d');
+  //Triangulo
+ contexto.beginPath();
+  contexto.beginPath();
+		   contexto.moveTo(200,50);
+		   contexto.lineTo(200,150);
+		   contexto.lineTo(300,150);
+          contexto.fill();     
+          
+//Degradado cuadrado 
+   var gradienteRadial = contexto.createRadialGradient(280,160,1,280,160,190);
+  gradienteRadial.addColorStop(0, '#FFFFFF');
+  gradienteRadial.addColorStop(0.7, 'rgba(0,0,0)');
+  gradienteRadial.addColorStop(1, '#00FF00'); 
+  contexto.fillStyle = gradienteRadial;
+  contexto.fillRect(350,130,110,110);
+  //Degradado barra
+  var gradienteLineal=contexto.createLinearGradient(10,70,10,210);
+  gradienteLineal.addColorStop(0,'#00FF00');
+  gradienteLineal.addColorStop(1,'#000000');
+  contexto.fillStyle= gradienteLineal;
+  contexto.fillRect(60,50,50,100);
+//Curva en forma de ese
+  contexto.beginPath();
+  contexto.moveTo(300,200);
+  contexto.bezierCurveTo(260,200,200,220,260,250);
+  contexto.bezierCurveTo(325,275,350,300,300,300);
+  contexto.stroke();
+
+  
+//Espiral
+  contexto.beginPath();
+  var x=100;  
+  var y=290;  
+  var r=0; 
+  var incre=3; 
+  var vueltas=5; 
+  for(var i=1;i<=vueltas;i++){
+     contexto.arc(x,y,r=r+incre,            0,radianes(90),false);
+     contexto.arc(x,y-incre,r=r+incre,      radianes(90),radianes(180),false);
+     contexto.arc(x+incre,y-incre,r=r+incre,radianes(180),radianes(270),false);
+     contexto.arc(x+incre,y,r=r+incre,      radianes(270),0,false); 
+  }
+  contexto.lineWidth = 4;         
+  contexto.fillStyle = '#99CC00';
+  contexto.fill();                
+  contexto.strokeStyle =  'rgb(0,0,0)'; 
+  contexto.stroke();               
+}
+  function radianes(grados){
+  var radianes = (Math.PI/180)*grados;
+  return radianes;
+}
+  </script>
+  </head>
+  <body onLoad="dibujarCanvas();">
+  <canvas id="miCanvas" width="850" height="850">Su navegador no soporta Canvas.</canvas>
+  </body>
+  </html>

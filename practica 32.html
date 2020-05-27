@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Banner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilooss.css">
+     <style>
+
+    .banner{
+    width: 700px;
+    height:  300px;
+    border: 3px solid red;
+    margin: auto;
+    
+    
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+}
+
+@keyframes banner{
+    0%,  30%   {
+        background-image:url(img/CetisMeme.jpg);
+        opacity: 1;
+    }
+    31%,  34%{
+        opacity: 0,1;
+    }
+    35%,  65%{
+        background-image:url(img/mari.jpg);
+        opacity: 1;
+        
+    }
+    66%  69%{
+        opacity: 0, 1;
+    }
+    70%,  100%{
+        background-image: url(img/colores.jpg);
+    }
+}
+
+.center{
+    text-align:center;
+    font-family:cursive;
+}
+ .boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+
+   </style>
+
+</head>
+<body>
+	<div class="banner">
+    </div>
+    <div class="center">
+    <h2 class="animate__animated animate__bounceIn"> animes </h2>
+    <p class="animate__animated animate__shakeY">Naruto - karin</p>
+    <p class="animate__animated animate__rotateInDownRight">Noragami - yato</p>
+    <p class="animate__animated animate__slideInUp"> Hyokuta - eru </p>
+    </div>
+     <br>
+ <br>
+
+
+  <a class="boton_personalizado" href="index.html" class="btn btn-common">inicio</a>
+</body>
+</html>
